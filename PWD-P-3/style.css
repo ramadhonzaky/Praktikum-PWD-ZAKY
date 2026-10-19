@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: rgb(246, 242, 242);
+  border-radius: 16px;               
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+}
+
+header {
+  background: url("gambar/pola.svg"),
+              linear-gradient(135deg, #1e3a5f, #2e7d9a);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+  font-size: 32px;
+}
+
+header p {
+  margin: 0;
+  opacity: 0.85;
+}
+
+nav {
+  background-color: #16213e;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 12px 25px;
+}
+
+nav .logo {
+  color: #ffd166;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+nav a:hover,
+nav a.aktif {
+  background-color: #ffd166;
+  color: #16213e;
+}
+
+section {
+  background-color: #eef2ff;
+  display: grid;
+  grid-template-columns: 2fr 1fr;  
+  gap: 25px;
+  padding: 25px;
+}
+
+article {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 6px solid #764ba2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  margin-top: 0;
+  color: #764ba2;
+}
+
+aside {
+  background-color: #fff1d6;
+  padding: 100px;
+  border-radius: 12px;
+  border-top: 6px solid #ffd166;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  align-self: start; 
+}
+
+aside h3 {
+  margin-top: 0;
+  color: #b5651d;
+}
+
+footer {
+  background-color: #2d2d44;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+footer p {
+  margin: 0;
+}
+
+article img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+img.foto {
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid #764ba2;
+  display: block;
+  margin-bottom: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #764ba2;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f3eefc; 
+}
+
+.menu-cepat {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-cepat li {
+  margin-bottom: 10px;
+}
+
+.menu-cepat a:hover {
+  background-color: #16213e;
+}
+
+@media (max-width: 700px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
