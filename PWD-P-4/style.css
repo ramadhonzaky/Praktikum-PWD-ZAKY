@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.7;
+  color: #e8ecff;
+  background-color: #0b1026;      
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+
+  background:
+    radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1.5px) 0 0 / 60px 60px,
+    radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1.5px) 30px 30px / 60px 60px,
+    linear-gradient(135deg, #1b1464, #5b2a86, #e8553d);
+}
+
+header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+}
+
+header p {
+  max-width: 560px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: #151c3b;
+  margin: 24px 0;
+  padding: 36px;
+  height: 450px;                       
+  border-radius: 16px;
+  border-left: 8px solid var(--warna); 
+}
+
+section h2 {
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+  color: var(--warna);
+}
+
+#btnTop {
+  
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff6b4a, #ffb347);
+  box-shadow: 0 0 18px rgba(255, 107, 74, 0.7);   
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0.4;
+  transition: opacity 0.3s, transform 0.3s;
+
+  visibility: hidden;
+}
+
+#btnTop.tampil {
+  visibility: visible;
+}
+
+#btnTop:hover {
+  opacity: 1;
+  transform: translateY(-6px) scale(1.1);   
+}
+
+#btnTop svg {
+  width: 26px;
+  height: 26px;
+  stroke: white;
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
